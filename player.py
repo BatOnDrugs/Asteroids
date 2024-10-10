@@ -17,7 +17,7 @@ class Player(CircleShape):
         
         # sub-classes must override
     def rotate(self, dt):
-        rotation += PLAYER_TURN_SPEED * dt
+        self.rotation += PLAYER_TURN_SPEED * dt
      
     def update(self, dt):
         keys = pygame.key.get_pressed()
