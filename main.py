@@ -34,7 +34,8 @@ def main():
             for item in asteroids:
                 if bullet.collisions(item) == True:
                     bullet.kill()
-                    item.kill()
+                    item.split(item.radius)
+                
 
 
         for item in drawable:
